@@ -1,0 +1,38 @@
+/**app.wxss**/
+
+page {
+    background-color: #ffc256;
+}
+
+view,text,button{
+    font-family: 'PingFangSC-Regular';
+}
+
+.bottom-view {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120rpx;
+    background: #fff;
+    line-height: 98rpx;
+    color: #fff;
+    font-size: 32rpx;
+    text-align: center;
+    z-index: 110;
+}
+
+.bottom-btn {
+    background-color: #ff8f4f;
+    border-color: #ff8f4f;
+    border-radius: 10rpx;
+    margin: 16rpx 20rpx 0rpx 20rpx;
+    border: 0;
+    height: 88rpx;
+    line-height: 88rpx;
+    color: #fff;
+    font-size: 36rpx;
+}
+.bottom-btn::after{
+    border-color: rgba(0, 0, 0, 0);
+}

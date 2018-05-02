@@ -1,0 +1,170 @@
+/* pages/test/test3.wxss */
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 50rpx;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: unset;
+  box-sizing: unset;
+  text-align: unset;
+  display: flex;
+  flex-direction: column;
+  line-height: unset;
+  background: unset;
+  background-color: unset;
+}
+
+.inner {
+  height: auto;
+  margin-top: 14rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner .btn {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.inner .btn image {
+  height: 110rpx;
+  width: 524rpx;
+}
+
+.inner .btn text {
+  position: absolute;
+  top: 0;
+  margin-top: 20rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-right: 60rpx;
+  z-index: 2;
+  right: 0px;
+  margin-top: 35rpx;
+}
+
+.icon text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 25rpx;
+}
+
+.icon image {
+  height: 109rpx;
+  width: 109rpx;
+}
+
+.banner {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  margin-top: 120rpx;
+}
+
+.banner image {
+  height: 210rpx;
+  width: 674rpx;
+}
+
+.banner text {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 48rpx;
+  font-weight: bold;
+  width: 90%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.input {
+  border: 2rpx solid black !important;
+  border-radius: 50rpx !important;
+  background-color: white;
+  height: 70rpx;
+  margin-top: 86rpx;
+  text-align: center;
+  width: 90%;
+}
+
+.input input {
+  height: 100%;
+}
+
+.submit {
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 83rpx;
+}
+
+.submit image {
+  height: 88rpx;
+  width: 264rpx;
+}
+
+.submit text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-55%);
+  font-weight: bold;
+}
+
+.counting {
+  height: 853rpx;
+  width: 521rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -260rpx;
+  transform: translateY(-55%);
+}
+
+.choices_list {
+  margin-top: 56rpx;
+}
+
+.choice {
+  position: relative;
+  align-items: left;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 22rpx;
+}
+
+.choice image {
+  height: 78rpx;
+  width: 684rpx;
+}
+
+.choice text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-weight: bold;
+}

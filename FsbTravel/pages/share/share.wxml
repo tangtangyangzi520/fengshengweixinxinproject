@@ -1,0 +1,30 @@
+<view class='container' wx:if="{{shareCategaryList.length}}">
+      <form bindsubmit="submitFromId" report-submit>
+            <!-- 头部 -->
+            <text class='top-view-title'>{{travelTitle}}</text>
+
+            <!-- 保存成功 -->
+            <view class='container-back'>
+                  <block wx:for="{{shareCategaryList}}" wx:key="unique" wx:for-item="categary" wx:for-index="section">
+                        <view class='section-back'>
+                              <view class='section-title'>{{categary.parentTagName}}</view>
+                              <block wx:for="{{categary.tags}}" wx:for-index="row">
+                                    <view class="cell">
+                                          <text class='cell-title'>{{item.tagName}}</text>
+                                          <view class='cell-buy-btn' wx:if="{{item.path && item.path.length}}" catchtap='buyGoods' data-section="{{section}}" data-row="{{row}}">去购买</view>
+                                    </view>
+                              </block>
+                        </view>
+                  </block>
+            </view>
+
+
+
+
+            <!-- 底部 -->
+            <view class='bottom-view'>
+                  <button form-type="submit" class='bottom-btn' bindtap='bottomBtnClicked'>保存为我的清单</button>
+            </view>
+      </form>
+
+</view>

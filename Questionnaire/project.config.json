@@ -1,0 +1,52 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxc1e6d573b7dee2b7",
+	"projectname": "%E6%B5%8B%E5%A4%9A%E5%A4%9A",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试shareTicket",
+					"pathName": "pages/home/home",
+					"query": "title=这是测试题的题目&topicId=3&topicTitle=\"test\"&source=tt",
+					"scene": "1001"
+				},
+				{
+					"id": 1,
+					"name": "测试shareTicket",
+					"pathName": "pages/result/result2",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群0",
+						"shareName": "hhvCjBawIdqUm4VB1YFX79NV0YypPXcOpeRxIHVRAXo@cr4dev",
+						"shareKey": "pU4vpkGfIGkdjP-PmQdB4NcIVx2wEdo2GurP98DbTDS_D93NGPLbfeProJdp8-yyx2qIkxGhlXEbE8Xa0mgsEw~~"
+					}
+				}
+			]
+		}
+	}
+}

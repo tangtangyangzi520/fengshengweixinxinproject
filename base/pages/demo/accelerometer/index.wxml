@@ -1,0 +1,3 @@
+<!--pages/demo/accelerometer/index.wxml-->
+<view wx:for="{{counts}}">计数：{{item.num}} 用时：{{item.useTime}}</view>
+<button bindtap='clear'>clear</button>

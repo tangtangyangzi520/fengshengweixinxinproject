@@ -1,0 +1,155 @@
+/* pages/test/test2.wxss */
+
+.container {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  height: auto;
+  margin-top: 14rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counting {
+  height: 853rpx;
+  width: 521rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -260rpx;
+  transform: translateY(-55%);
+}
+
+.wrap {
+  overflow: hidden;
+  margin-top: 120rpx;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  border: 10rpx solid black !important;
+  border-radius: 30rpx !important;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.banner_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.banner text {
+  letter-spacing: 8rpx;
+}
+
+.tip {
+  font-size: 40rpx;
+  color: white;
+  font-weight: bold;
+  text-shadow: #000 3rpx 0 0, #000 0 3rpx 0, #000 -3rpx 0 0, #000 0 -3rpx 0;
+  width: 180rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background: rgb(254, 197, 45);
+  border: 10rpx solid black !important;
+  border-radius: 30rpx !important;
+  position: absolute;
+  text-align: center;
+  left: 220rpx;
+}
+
+.question {
+  font-size: 50rpx;
+  font-weight: bold;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  width: 580rpx;
+  margin-top: 120rpx;
+  text-align: left;
+}
+
+.line {
+  width: 80%;
+  height: 10rpx;
+  background: black;
+  border-radius: 30rpx;
+  margin: 30rpx;
+}
+
+.input {
+  border: 10rpx solid black !important;
+  border-radius: 50rpx !important;
+  background-color: white;
+  height: 80rpx;
+  margin-top: 80rpx;
+  margin-bottom: 200rpx;
+  text-align: center;
+  width: 75%;
+}
+
+.input input {
+  height: 100%;
+}
+
+.btn {
+  width: 332rpx;
+  height: 122rpx;
+}
+
+.paint {
+  position: fixed;
+  top: 200rpx;
+  right: 0rpx;
+  width: 164rpx;
+  height: 238rpx;
+}
+
+.add_pic {
+  width: 286rpx;
+  height: 257rpx;
+  margin-top: 50rpx;
+  margin-bottom: 120rpx;
+}
+
+.choice {
+  position: relative;
+  align-items: left;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 22rpx;
+}
+
+.choice text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-73%);
+  text-align: center;
+  width: 100%;
+  font-size: 50rpx;
+  color: white;
+  text-shadow: #000 3rpx 0 0, #000 0 3rpx 0, #000 -3rpx 0 0, #000 0 -3rpx 0;
+}
+
+.picker {
+  height: 80rpx;
+  padding-top: 18rpx;
+}
+
+.avatar {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 300rpx;
+  border: 10rpx solid black;
+  margin-bottom: 120rpx;
+}

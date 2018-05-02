@@ -1,0 +1,24 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/common.wxss';
+.container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.btn-fix-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 98rpx;
+  background: #04C5B4;
+  line-height: 98rpx;
+  color: #FFF;
+  font-size: 32rpx;
+  text-align: center;
+}
+.btn-fix-bottom:active {
+  background: #01a798;
+}

@@ -1,0 +1,58 @@
+/* pages/home/home.wxss */
+
+.container {
+  align-items: unset;
+}
+
+.home-image {
+  height: 240rpx;
+  width: 100%;
+}
+
+.home-item {
+  display: flex;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 30rpx;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: left;
+}
+
+.home-item button {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: unset;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  border: unset;
+  box-sizing: unset;
+  text-align: unset;
+  display: flex;
+  flex-direction: column;
+  line-height: unset;
+  background: unset;
+}
+
+.home-item button::after {
+  border: unset;
+  border-radius: unset;
+}
+
+.home-tips {
+  font-size: 24rpx;
+  color: rgb(183, 182, 182);
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.home-title {
+  color: rgb(83, 82, 82);
+  font-size: 30rpx;
+  margin-top: 18rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}

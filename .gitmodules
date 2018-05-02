@@ -1,0 +1,6 @@
+[submodule "Questionnaire/common/utils"]
+	path = Questionnaire/common/utils
+	url = http://gitlab.fshealthtop.com/chenweibin/wx_common.git
+[submodule "FsbTravel/common/utils"]
+	path = FsbTravel/common/utils
+	url = http://gitlab.fshealthtop.com/chenweibin/wx_common.git

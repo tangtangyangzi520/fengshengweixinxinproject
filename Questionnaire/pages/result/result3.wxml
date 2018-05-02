@@ -1,0 +1,39 @@
+<!--pages/result/result3.wxml-->
+<view class='container'>
+  <canvas class='bg' canvas-id="cardCanvas" style='left:1000px;width:750px;height:1334px;'></canvas>
+  <image src='/images/topic3/bg_test@2x.png' class='bg'></image>
+  <view class='inner' style='margin-top:20rpx;'>
+    <image src='/images/topic3/bg_result_normal@2x.png' mode='aspectFit' class='result_border'></image>
+    <view class='btn_layout'>
+      <button class='btn' style='margin-right:30rpx' open-type="share">
+        <image class='btn_image' src='/images/topic1/bt_submit_normal@2x.png'></image>
+        <text>转发给好友</text>
+      </button>
+      <view class='btn' style='margin-left:30rpx' bindtap='onTestAgain'>
+        <image class='btn_image' src='/images/topic1/bt_submit_normal@2x.png'></image>
+        <text>再测一次</text>
+      </view>
+    </view>
+    <text class='back_home' bindtap='onBackHome'>回到首页</text>
+  </view>
+
+  <view class="inner" style='width: 65%;'>
+    <text style='font-size:30rpx; font-weight:bold; color: black;'>最适合你的旅游目的地是</text>
+    <text style='font-size:60rpx; font-weight:bold; color: black; letter-spacing:10rpx; margin: 25rpx;'>{{result.answerTitle}}</text>
+    <view style='position:relative'>
+      <image class='result_img' src='{{result.answerPicture}}' bindtap='onImageClicked'></image>
+      <image class='mask' src='/images/topic1/ic_yinzhang@2x.png'></image>
+    </view>
+    <text class='borde_text'>{{result.answerDesc}}</text>
+
+    <view class='btn' style='margin-top: 20rpx;' bindtap='onGetOrder'>
+      <image class='order_img'  src='/images/topic3/bt_qingdan_normal@2x.png'></image>
+      <text>一键生成旅游打包清单</text>
+    </view>
+  </view>
+
+  <!-- <view class='btn share_btn' bindtap='onCreateQR'>
+    <image src='/images/topic1/bt_share_normal@2x.png'></image>
+    <text>分享至朋友圈</text>
+  </view> -->
+</view>

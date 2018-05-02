@@ -1,0 +1,11 @@
+<!--pages/preTest/preTest3.wxml-->
+<view class='container'>
+  <image src='/images/topic3/bg_homepage@2x.png' class='bg' mode='aspectFill'></image>
+  <view class="inner">
+    <view class='btn' bindtap='onStartTest'>
+      <image src='/images/topic1/bt_start_normal@2x.png'></image>
+      <view>开始测试</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<import src="../choice-categary-template/choice-categary-template.wxml" />
+
+<view class='container' wx:if="{{categaryList.length > 0}}">
+    <view class='list-back'>
+        <text class='travel-title'>{{travelTitle}}</text>
+        <template is="choiceCategaryTemplate" data="{{categaryList}}" />
+    </view>
+
+    <view class='bottom-view'>
+        <button class='bottom-btn' bindtap='nextStep'>下一步</button>
+    </view>
+</view>

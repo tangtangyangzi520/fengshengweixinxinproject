@@ -1,0 +1,119 @@
+/* pages/result/result3.wxss */
+.container {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  position: absolute;
+  height: auto;
+  top: 0;
+  margin-top: 120rpx;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+}
+
+.result_img {
+  width: 268rpx;
+  height: 200rpx;
+  border: 3rpx solid black;
+}
+
+.borde_text {
+  margin-top: 20rpx;
+  width: 95%;
+  letter-spacing: 5rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.mask {
+  position: absolute;
+  display: block;
+  left: 24rpx;
+  width: 108rpx;
+  height: 94rpx;
+  top: -50rpx;
+  left: -50rpx;
+}
+
+.btn_layout {
+  display: flex;
+  margin-top: 22rpx;
+}
+
+.btn {
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-left: unset;
+  padding-right: unset;
+  border-radius: unset;
+  line-height: unset;
+  background-color: unset;
+  border: unset;
+}
+
+.btn::after {
+  border: unset;
+  background-color: unset;
+}
+
+.btn_image {
+  height: 88rpx;
+  width: 274rpx;
+}
+
+.order_img {
+  height: 88rpx;
+  width: 370rpx;
+}
+
+.btn view {
+  position: absolute;
+  width: 100%;
+  top: 5rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.btn view:nth-child(2) {
+  top: 40rpx;
+}
+
+.btn text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-55%);
+  font-weight: bold;
+  line-height: unset;
+}
+
+.back_home {
+  margin-bottom: 24rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.result_border {
+  top: 22rpx;
+  width: 629rpx;
+  height: 950rpx;
+}
+
+.share_btn {
+  position: fixed;
+  right: 0px;
+  top: 20rpx;
+  width: 231rpx;
+  height: 84rpx;
+}

@@ -1,0 +1,77 @@
+<import src="../choice-categary-template/choice-categary-template.wxml" />
+
+<view class='container'>
+      <form bindsubmit="submitFromId" report-submit>
+            <!-- 头部 -->
+            <text class='top-view-title'>{{travelTitle}}</text>
+            <view class='top-view'>
+                  <button plain='true' form-type="submit" wx:if="{{showStyle == 3}}" bindtap='changeShowStyle' style="margin-right: 10rpx;margin-left: auto;">
+                        <image class='top-view-right-img' src='../../images/ic_88_set@3x.png'></image>
+                  </button>
+                  <button plain='true' form-type="submit" wx:else bindtap='changeShowStyle'>
+                        <image class='top-view-left-img' src='../../images/ic_88_list@3x.png'></image>
+                  </button>
+            </view>
+
+            <!-- 选择详情 -->
+            <view class='container-back' wx:if="{{showStyle == 1}}">
+                  <block wx:for="{{categaryList}}" wx:key="unique" wx:for-item="categary" wx:for-index="section">
+                        <view class='section-back' wx:if="{{categary.isSelect || categary.isDefault}}">
+                              <view class='section-title'>{{categary.parentTagName}}</view>
+                              <view class="cell" wx:for="{{categary.tags}}" wx:key="unique" wx:for-item="item" wx:for-index="row" bindtap='elementChoiceOrNot' data-section="{{section}}" data-row="{{row}}">
+                                    <text class='cell-title'>{{item.tagName}}</text>
+                                    <view class='cell-right-back'>
+                                          <view class='cell-buy-btn' wx:if="{{item.pathList && item.pathList.length}}" catchtap='buyGoods' data-section="{{section}}" data-row="{{row}}">去购买</view>
+                                          <image class='cell-icon' src="{{item.isSelect ? '/images/ic_88_choose@3x.png' : '/images/ic_88_unchecked@3x.png'}}" />
+                                    </view>
+                              </view>
+                              <view class='add-cell'>
+                                    <image class='add-cell-image' src='/images/ic_44_addition@3x.png'></image>
+                                    <input class='add-cell-input' placeholder='添加新项目' placeholder-class='add-cell-input-placeholder' bindblur="inputBlur" data-section="{{section}}" maxlength="15" value="{{inputValue}}"></input>
+                              </view>
+
+                        </view>
+
+                  </block>
+
+
+            </view>
+
+
+            <!-- 选择分类 -->
+            <view class='container-categary-back' wx:elif="{{showStyle == 2}}">
+                  <template is="choiceCategaryTemplate" data="{{categaryList}}" />
+            </view>
+
+
+            <!-- 保存成功 -->
+            <view class='container-back' wx:elif="{{showStyle == 3}}">
+                  <block wx:for="{{myCategaryList}}" wx:key="unique" wx:for-item="categary" wx:for-index="section">
+                        <view class='section-back'>
+                              <view class='section-title'>{{categary.parentTagName}}</view>
+                              <block wx:for="{{categary.tags}}" wx:key="unique" wx:for-item="item" wx:for-index="row">
+                                    <view class="cell" bindtap='elementPrepareOrNot' data-section="{{section}}" data-row="{{row}}">
+                                          <text class='cell-title'>{{item.tagName}}</text>
+                                          <view class='cell-right-back'>
+                                                <view class='cell-buy-btn' wx:if="{{item.path && item.path.length}}" catchtap='buyGoods' data-section="{{section}}" data-row="{{row}}">去购买</view>
+                                                <image class='cell-icon' src="{{item.isPrepare ? '/images/ic_88_label@3x.png' : '/images/ic_88_unlabeled@3x.png'}}" />
+                                          </view>
+                                    </view>
+                              </block>
+                              <view></view>
+                        </view>
+                  </block>
+            </view>
+
+
+
+
+            <!-- 底部 -->
+            <view class='bottom-view'>
+                  <button class='bottom-btn' form-type="submit" wx:if="{{showStyle == 3}}" open-type='share' disabled="{{!bottomBtnEnableStatus}}">发送给我的朋友</button>
+                  <button class='bottom-btn' form-type="submit" wx:elif="{{isModify}}" bindtap='bottomBtnClicked' disabled="{{!bottomBtnEnableStatus}}">保存修改</button>
+                  <button class='bottom-btn' form-type="submit" wx:elif="{{showStyle == 1}}" bindtap='bottomBtnClicked' disabled="{{!bottomBtnEnableStatus}}">保存我的清单</button>
+                  <button class='bottom-btn' form-type="submit" wx:else bindtap='bottomBtnClicked' disabled="{{!bottomBtnEnableStatus}}">保存修改</button>
+            </view>
+      </form>
+</view>

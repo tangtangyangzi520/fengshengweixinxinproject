@@ -1,0 +1,16 @@
+
+
+
+
+<template name="choiceCategaryTemplate">
+     <view class='categary-container'>
+        <view wx:for="{{categaryList}}" class='categary-item' wx:key="unique" wx:for-item="categary" bindtap='categaryItemClicked' data-item="{{categary}}" wx:if="{{!categary.isDefault}}">
+            <view>
+   
+                <image class="categary-item-img  {{categary.isSelect ? 'categary-item-img-select' : ''}}" src="{{categary.tagIcon}}"></image>
+                <text class="categary-item-name {{categary.isSelect ? 'categary-item-name-select' : ''}}">{{categary.parentTagName}}</text>
+
+            </view>
+        </view>
+    </view> 
+</template>

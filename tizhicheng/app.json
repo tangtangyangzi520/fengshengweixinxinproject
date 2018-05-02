@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/connect/index",
+    "pages/result/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "丰盛榜体脂称",
+    "navigationBarTextStyle":"black"
+  }
+}

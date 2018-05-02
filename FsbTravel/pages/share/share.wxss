@@ -1,0 +1,64 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.top-view-title {
+    text-align: center;
+    line-height: 88rpx;
+    width: 100%;
+    position: fixed;
+    background: #ffc256;
+    color: #fff;
+    z-index: 100;
+}
+
+.container-back {
+    margin: 88rpx 20rpx 130rpx 20rpx;
+}
+
+.section-back {
+    background-color: #fff;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+}
+
+.section-title {
+    width: 710rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: #333;
+    line-height: 100rpx;
+}
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    height: 88rpx;
+    border-bottom: 1rpx solid #ddd;
+    justify-content: space-between;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    align-items: center;
+}
+
+.cell-title {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+
+.cell-buy-btn{
+    background-color: #FF8F4F;
+    color: #fff;
+    font-size: 26rpx;
+    height:  60rpx;
+    width: 120rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+}
+

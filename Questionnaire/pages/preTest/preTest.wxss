@@ -1,0 +1,59 @@
+/* pages/preTest/preTest.wxss */
+
+/* image {
+   height: 100%;
+   width: 100%
+ } */
+
+.container {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  position: absolute;
+  height: auto;
+  width: 680rpx;
+  bottom: 100rpx;
+  left: 50%;
+  margin-left: -340rpx;
+}
+
+.inner .btn {
+  position: relative;
+  width: 523rpx;
+  height: 88rpx;
+  margin-top: 40rpx;
+  left: 50%;
+  margin-left: -262rpx;
+}
+
+.inner .btn image {
+  height: 110rpx;
+  width: 524rpx;
+}
+
+.inner .btn view {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  transform: translateY(-45%);
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.inner .note {
+  color: rgb(93, 93, 93);
+  margin-left: 58rpx;
+  margin-right: 58rpx;
+  font-size: 23rpx;
+}
+
+.inner button {
+  margin-left: 58rpx;
+  margin-right: 58rpx;
+  margin-bottom: 30rpx;
+}

@@ -1,0 +1,63 @@
+<!--logs.wxml-->
+<view>
+  <block>
+    <view class="green-back">
+      <view class="score">
+        <view class="weight">
+          <view class="circle">
+            <view class="circle-num">{{userInfo.allUserInfo.weight}}</view>
+            <view class="part">kg</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="percent">
+      <view class="percent-word">身体成分</view>
+      <view class="percent-bottom">
+        <view class="percent-row">
+          <view class="one-part top-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_weight_normal.png"></image>
+            <view class="percent-desc">实际体重({{userInfo.allUserInfo.weight}})</view>
+          </view>
+          <view class="one-part top-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_bmi_normal.png"></image>
+            <view class="percent-desc">体质指数({{userInfo.allUserInfo.bmi}})</view>
+          </view>
+          <view class="one-part top-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_bodyfat_normal.png"></image>
+            <view class="percent-desc">体脂率({{userInfo.allUserInfo.bfp}}%)</view>
+          </view>
+        </view>
+        <view class="percent-row">
+          <view class="one-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_muscle_normal.png"></image>
+            <view class="percent-desc">肌肉量({{userInfo.allUserInfo.muscle}})</view>
+          </view>
+          <view class="one-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_age_normal.png"></image>
+            <view class="percent-desc">身体年龄({{userInfo.allUserInfo.bodyAge}})</view>
+          </view>
+          <view class="one-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_bone_normal.png"></image>
+            <view class="percent-desc">骨骼重量({{userInfo.allUserInfo.bones}})</view>
+          </view>
+        </view>
+        <view class="percent-row ">
+          <view class="one-part bottom-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_viscera_normal.png"></image>
+            <view class="percent-desc">内脏脂肪({{userInfo.allUserInfo.vf}})</view>
+          </view>
+          <view class="one-part bottom-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_metabolism_normal.png"></image>
+            <view class="percent-desc">基础代谢({{userInfo.allUserInfo.bmr}})</view>
+          </view>
+          <view class="one-part bottom-part">
+            <image class="percent-img" src="../../assets/ic_healthreport_water_normal.png"></image>
+            <view class="percent-desc">水分率({{userInfo.allUserInfo.moisture}}%)</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='height:20rpx;'></view>
+  </block>
+</view>

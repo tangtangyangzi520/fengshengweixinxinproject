@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class='tizhicheng'>
+  <image src='/assets/bg_594_scales_three.png'></image>
+  <view class='circle circle1' animation="{{scaleOutIn1}}"></view>
+  <view class='circle circle2' animation="{{scaleOutIn2}}"></view>
+   <view class='state-close' wx:if="{{!btOpen&&!onerror}}">
+    <image src='/assets/ic_184_bluetooth_nothing_one@2x.png'></image>
+  </view>
+  <view class='state-open' wx:if="{{onerror}}">
+    <image src='/assets/ic_184_bluetooth_fail_one.png'></image>
+  </view>
+  <view class='state-open' wx:if="{{btOpen&&!onerror}}">
+    <image src='/assets/ic_184_bluetooth_one@2x.png'></image>
+  </view> 
+</view>
+<view wx:if="{{!btOpen&&!onerror}}">
+  <view class='title' style='margin-top:30rpx;'>啊哦！您的蓝牙还没开启，</view>
+  <view class='title'>开启蓝牙才能使用您的设备哦~</view>
+  <view class='title'>请在“设置-蓝牙”中打开蓝牙</view>
+</view>
+<view wx:if="{{btOpen&&!onerror}}" style='margin-top:50rpx;'>
+  <view class='title'>请站在智能体脂称上</view>
+</view>
+<view wx:if="{{onerror}}" style='margin-top:50rpx;'>
+  <view class='title'>{{errorMsg}}</view>
+</view>
+<view class='tips'>保持手机蓝牙为开启状态</view>
+<view bindtap='goStart' class="btn-fix-bottom">{{onerror?'点击重试':stateMsg}}</view>

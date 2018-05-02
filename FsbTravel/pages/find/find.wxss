@@ -1,0 +1,118 @@
+.container {
+      display: flex;
+      flex-direction: column;
+}
+
+.find-header-img {
+      width: 750rpx;
+      height: 240rpx;
+}
+
+.find-header-input {
+      height: 80rpx;
+      margin-left: 80rpx;
+      margin-right: 80rpx;
+      font-size: 36rpx;
+      text-align: center;
+      color: #fff;
+}
+
+.input-placehold {
+      text-align: center;
+      color: #fff;
+      font-size: 36rpx;
+}
+
+.find-header-line {
+      height: 1rpx;
+      margin-left: 85rpx;
+      margin-right: 85rpx;
+      background-color: #fff;
+}
+
+.find-header-btn {
+      margin-top: 30rpx;
+      margin-bottom: 30rpx;
+      margin-left: 20rpx;
+      margin-right: 20rpx;
+      background-color: #ff8f4f;
+      border-radius: 10rpx;
+      height: 88rpx;
+      text-align: center;
+}
+
+.find-header-btn-text {
+      font-size: 36rpx;
+      color: #fff;
+      text-align: center;
+      line-height: 88rpx;
+}
+
+.find-header-btn-text[plain] {
+	color: #fff;
+	border: unset;
+}
+
+.template-container-back {
+      background-color: #fff;
+      border-radius: 10rpx;
+      margin-left: 20rpx;
+      margin-right: 20rpx;
+      margin-bottom: 20rpx;
+}
+
+.template-title {
+      line-height: 82rpx;
+      margin-left: 30rpx;
+      text-align: center;
+      font-size: 30rpx;
+      color: #999;
+}
+
+.template-container {
+      margin-left: 30rpx;
+      margin-right: 30rpx;
+      margin-bottom: 40rpx;
+}
+
+.template-item {
+      width: 310rpx;
+      height: 240rpx;
+      margin-bottom: 40rpx;
+      display: inline-block;
+      /* float: left; */
+      text-align: center;
+}
+
+.template-item button {
+	padding-left: 0;
+	padding-right: 0;
+	border-radius: unset;
+	line-height: unset;
+}
+.template-item button::after {
+	border-radius: unset;
+	line-height: unset;
+}
+
+.template-item button[plain] {
+	border: unset;
+	color: unset;
+}
+
+.template-item-doub {
+      float: right;
+}
+
+.template-img {
+      width: 310rpx;
+      height: 180rpx;
+      background: #d8d8d8;
+}
+
+.template-name {
+      width: 0rpx;
+      height: 40rpx;
+      color: #333;
+      font-size: 30rpx;
+}

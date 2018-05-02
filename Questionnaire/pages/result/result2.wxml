@@ -1,0 +1,23 @@
+<!--pages/result/result2.wxml-->
+<view class='container'>
+  <image src='/images/topic2/bg.png' class='bg'></image>
+  <view class='inner'>
+    <image class='inner_bg' src='/images/topic2/bg_text_one_normal@2x.png'></image>
+    <text class='title'>{{result.obj1}}宝宝最有可能成为~</text>
+    <image class='avatar' mode='aspectFill' wx:if='{{result.answerPicture}}' src='{{result.answerPicture}}'></image>
+    <image class='avatar' wx:else src='/images/QR.jpg'></image>
+    <text class='desc'>{{result.obj2}}</text>
+    <text class='result'>{{result.answerTitle}}</text>
+
+    <text class='result_desc'>{{result.answerDesc}}</text>
+
+    <view class='btn_layout'>
+      <button class='btn' open-type="share">
+      <image class='btn' style='margin-right: 20rpx;' src='/images/topic2/bt_share_normal@2x.png'></image>
+      </button>
+      <image class='btn' bindtap='onTestAgain' style='margin-left:20rpx;' src='/images/topic2/bt_again_normal@2x.png'></image>
+    </view>
+
+    <text class='back_home' bindtap='onBackHome'>回到首页</text>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+.container {
+  padding-top: 50rpx;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  width: 92%;
+  font-size: 32rpx;
+  margin: auto;
+  line-height: 140rpx;
+  border-bottom: 1rpx solid #dbdbdb;
+  justify-content: space-between;
+}
+
+.item picker {
+  color: #999;
+}
+
+.item image {
+  width: 24rpx;
+  height: 15rpx;
+  margin-left: 40rpx;
+  float: right;
+  margin-top: 62rpx;
+  transform: rotate(-90deg);
+}
+
+.picker {
+  color: #999;
+}

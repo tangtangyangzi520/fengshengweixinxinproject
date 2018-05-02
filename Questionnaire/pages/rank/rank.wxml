@@ -1,0 +1,59 @@
+<!--pages/rank/rank.wxml-->
+<view class='container' style='position:relative'>
+  <image src='/images/topic1/bg_test@2x.png' class='bg'></image>
+
+  <view class="inner">
+
+    <view class='frameLayout'>
+      <image class='icon_crown' src='/images/topic1/ic_list_normal@2x.png'></image>
+      <image class='icon_big' src='{{surveyRankVos[0].avatar}}'></image>
+    </view>
+    <text style='font-weight:bold;margin-top:10rpx;'>{{surveyRankVos[0].userName}}</text>
+
+    <view class='rank_list'>
+      <view class="rank-title">
+        <text style='left:30rpx;'>排名</text>
+        <text style='left:100rpx;'>头像</text>
+        <text style='left:200rpx;'>姓名</text>
+        <text style='left:440rpx;'>实际年龄差</text>
+      </view>
+      <view style='background:white; border-radius:20rpx;'>
+        <view class='item'>
+          <text style='left:47rpx;'>{{surveyRankVo.rank}}</text>
+          <image class='icon' src='{{surveyRankVo.avatar}}'></image>
+          <text style='left:180rpx;'>{{surveyRankVo.userName}}</text>
+          <text class='age'>{{surveyRankVo.differAge > 0 ? "+" + surveyRankVo.differAge : surveyRankVo.differAge}}岁</text>
+        </view>
+        <view style='width:100%;height:8rpx;background:rgb(140,228, 234);'></view>
+
+        <block wx:for="{{surveyRankVos}}" wx:key="*this">
+          <view class='item'>
+            <image wx:if="{{item.rank <= 3}}" src='/images/topic1/ic_list_{{item.rank}}_normal@2x.png' style='left:30rpx;' class='rank' />
+            <text style='left:47rpx;'>{{item.rank}}</text>
+            <image class='icon' src='{{item.avatar}}'></image>
+            <text style='left:180rpx;'>{{item.userName}}</text>
+            <text class='age'>{{item.differAge > 0 ? "+" + item.differAge : item.differAge}}岁</text>
+          </view>
+          <view style='width:100%;height:3rpx;background:rgb(140,228, 234);'></view>
+        </block>
+
+      </view>
+    </view>
+
+  </view>
+
+  <view class='bottom'>
+    <view class='btn_layout'>
+      <view class='btn' style='margin-right:30rpx' bindtap='onMall'>
+        <image src='/images/topic1/bt_result_normal@2x.png'></image>
+        <text>教你变年轻的秘籍</text>
+      </view>
+      <button class='btn' style='margin-left:30rpx' open-type="share">
+        <image src='/images/topic1/bt_result_normal@2x.png'></image>
+        <text>分享到其他群</text>
+      </button>
+    </view>
+    <text style='font-weight:bold;font-size:28rpx;padding-top:20rpx;padding-bottom:20rpx;' bindtap='onBackHome'>再测测别的，比拼比拼</text>
+  </view>
+
+</view>

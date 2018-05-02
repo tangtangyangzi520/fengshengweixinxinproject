@@ -1,0 +1,36 @@
+{
+    "pages": [
+        "pages/find/find",
+        "pages/mine/mine",
+        "pages/categary/categary",
+        "pages/creatTravelList/creatTravelList",
+        "pages/share/share"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#FFC256",
+        "navigationBarTitleText": "打包清单小能手",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#FFC256"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "selectedColor": "#FF8F4F",
+        "color": "#999",
+        "backgroundColor": "#fff",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/find/find",
+                "text":"发现",
+                "iconPath": "images/tabbar/ic_54_discover_normal@3x.png",
+                "selectedIconPath": "images/tabbar/ic_54_discover_selected@3x.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我",
+                "iconPath": "images/tabbar/ic_54_me_normal@3x.png",
+                "selectedIconPath": "images/tabbar/ic_54_me_selected@3x.png"
+            }
+        ]
+    }
+}

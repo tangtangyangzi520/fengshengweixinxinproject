@@ -1,0 +1,24 @@
+/* pages/preTest/preTest2.wxss */
+page{
+  background: #5c6ff0;
+}
+.container {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  position: absolute;
+  height: auto;
+  width: 680rpx;
+  top: 800rpx;
+  left: 50%;
+  margin-left: -340rpx;
+}
+
+.img {
+  width: 322rpx;
+  height: 122rpx;
+  margin-left: 130rpx; 
+}

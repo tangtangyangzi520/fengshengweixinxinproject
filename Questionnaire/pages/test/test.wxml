@@ -1,0 +1,41 @@
+<!--pages/test/test.wxml-->
+<view class='container'>
+  <image src='/images/topic1/bg_test@2x.png' class='bg'></image>
+  <image wx:if="{{isCounting}}" src='/images/topic1/bg_count@2x.png' mode='aspectFit' class='counting'></image>
+  <form wx:else bindsubmit="onSubmit" report-submit="true" style='position: absolute;top:0;height: 100%;width:100%;'>
+    <view class="inner">
+      <view>
+        <view class="icon">
+          <image src='/images/topic1/ic_page@2x.png'></image>
+          <text>{{choice_progress}}</text>
+        </view>
+
+        <view class='banner'>
+          <image src='/images/topic1/bg_textbox@2x.png'></image>
+          <text>{{question.questionName}}</text>
+        </view>
+      </view>
+      <block wx:if="{{question.questionType == 2}}">
+        <view class='input'>
+          <input maxlength="2" type="digit" bindinput='onInputAge' value='{{question.selfDefined}}' />
+        </view>
+        <button class='submit' bindtap='onSubmitInput' form-type='submit'>
+          <image src='/images/topic1/bt_submit_normal@2x.png'></image>
+          <text>下一题</text>
+        </button>
+      </block>
+      <block wx:else>
+        <image class='question_img' wx:if='{{question.questionPicture}}' src='{{question.questionPicture}}'></image>
+        <view class='choices_list'>
+          <block wx:for='{{question.questionChoices}}' wx:key="choiceName">
+            <button class='choice' bindtap='onChoiced' data-value='{{item.choiceId}}' form-type='submit'>
+              <image src='/images/topic1/bt_option_normal@2x.png'></image>
+              <text>{{item.choiceName}}</text>
+            </button>
+          </block>
+        </view>
+      </block>
+    </view>
+  </form>
+
+</view>

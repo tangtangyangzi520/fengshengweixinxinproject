@@ -1,0 +1,18 @@
+<view>
+      <form bindsubmit="submitFromId" report-submit>
+            <view class='list-container' wx:if="{{myTravelList.length > 0}}">
+                  <view class='cell-container' wx:for="{{myTravelList}}" wx:key="unique" bindtap='checkListDetail' data-item="{{item}}" hover-class='cell-hover'>
+                        <button plain='true' form-type="submit">
+                              <image class='cell-image' src="{{item.listIcon ? item.listIcon : '/images/bg_130_otherplace_normal@3x.png'}}" mode='aspectFill'></image>
+                              <text class='cell-title'>{{item.listName}}</text>
+                              <image class='cell-arrow' src='/images/ic_88_back_normal_b@3x.png'></image>
+                        </button>
+                  </view>
+            </view>
+
+            <view class='no-container' wx:else>
+                  <image class='no-list-img' src='/images/ic_nothing@3x.png'></image>
+                  <text class='no-list-text'>暂无清单</text>
+            </view>
+      </form>
+</view>

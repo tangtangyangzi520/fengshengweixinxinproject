@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fs-toast": "/common/components/toast/toast"
+  }
+}

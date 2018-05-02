@@ -1,0 +1,43 @@
+<!--pages/test/test2.wxml-->
+<view class='container'>
+  <image src='/images/topic2/bg.png' class='bg' mode='aspectFill'></image>
+  <image wx:if="{{isCounting}}" src='/images/topic1/bg_count@2x.png' class='counting'></image>
+  <form wx:else bindsubmit="onSubmit" report-submit="true" style='position: fixed;top:0;height: 100%;width:100%;'>
+    <view class="inner">
+      <view class='wrap'>
+        <view class='banner'>
+          <text wx:if='{{question.questionType == 1}}' class='tip'>{{choiceNum}}</text>
+          <image class='banner_bg' src='/images/topic2/bg_box_nothing_normal@2x.png'></image>
+          <text class='question'>{{question.questionName}}</text>
+          <view class='line'></view>
+
+          <block wx:if='{{question.questionType == 6}}'>
+            <image class='avatar' bindtap='onAddPic' mode='aspectFill' wx:if='{{question.selfDefined}}' src='{{question.selfDefined}}'></image>
+            <image wx:else class='add_pic' bindtap='onAddPic' src='/images/topic2/bt_photo_normal@2x.png'></image>
+          </block>
+          <view class='input' wx:elif='{{question.questionType == 5}}'>
+            <input type="text" bindinput='onInput' value='{{question.selfDefined}}'  maxlength="5"/>
+          </view>
+          <picker class='input' wx:elif='{{question.questionType == 4}}' mode="date" value="{{question.selfDefined}}" start="1995-01-01" end="{{now}}" bindchange="onInput">
+            <view class="picker">
+              {{question.selfDefined}}
+            </view>
+          </picker>
+          <view wx:else class='choices_list'>
+            <block wx:for='{{question.questionChoices}}' wx:key="choiceName">
+              <button class='choice' bindtap='onChoiced' data-value='{{item.choiceId}}' form-type='submit'>
+                <image class='btn' src='/images/topic2/bt_normal@2x.png'></image>
+                <text>{{item.choiceName}}</text>
+              </button>
+            </block>
+          </view>
+        </view>
+        <button wx:if='{{question.questionType == 4 || question.questionType == 5 || question.questionType == 6}}' class='choice' bindtap='onSubmitInput' data-value='{{question.questionType}}' form-type='submit' style='margin-top:-70rpx;z-index:1'>
+          <image class='btn' src='/images/topic2/{{btn_type}}'></image>
+        </button>
+      </view>
+      <image wx:if='{{question.questionType == 4 || question.questionType == 5 || question.questionType == 6}}' class='paint' src='/images/topic2/ic_text_normal.png'></image>
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/result/result",
+    "pages/test/test",
+    "pages/preTest/preTest",
+    "pages/rank/rank",
+    "pages/preTest/preTest2",
+    "pages/test/test2",
+    "pages/result/result2",
+    "pages/preTest/preTest3",
+    "pages/result/result3",
+    "pages/test/test3"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#37383c",
+    "navigationBarTitleText": "测多多",
+    "navigationBarTextStyle": "white"
+  },
+  "debug":true
+}

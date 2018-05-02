@@ -1,0 +1,50 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wx8afde93cc9f44521",
+	"projectname": "%E4%B8%B0%E7%9B%9B%E6%A6%9C%E4%BD%93%E8%84%82%E7%A7%B0",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "正式",
+					"pathName": "pages/connect/index",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "蓝牙扫描页面",
+					"pathName": "pages/index/index",
+					"query": "data=fd370003000000000000c9",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "结果",
+					"pathName": "pages/result/index",
+					"query": "",
+					"scene": "1001"
+				}
+			]
+		}
+	}
+}

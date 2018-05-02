@@ -1,0 +1,35 @@
+.categary-container {
+    padding-left: 25rpx;
+    padding-right: 25rpx;
+}
+
+.categary-item {
+    width: 33.33%;
+    /* float: left; */
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+
+.categary-item-img {
+    width: 160rpx;
+    height: 160rpx;
+    background: #FFFAF2;
+    border-radius: 80rpx;
+    opacity: 0.3;
+}
+
+.categary-item-img-select{
+    opacity: 1;
+}
+
+.categary-item-name {
+    display: block;
+    width: 100%;
+    font-size: 30rpx;
+    color: #999999;
+}
+
+.categary-item-name-select{
+    color: #333333;
+}

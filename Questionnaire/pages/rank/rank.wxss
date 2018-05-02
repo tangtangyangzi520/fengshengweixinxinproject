@@ -1,0 +1,178 @@
+/* pages/rank/rank.wxss */
+
+.container {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  margin-top: 34rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_crown {
+  width: 195rpx;
+  height: 150rpx;
+  position: absolute;
+}
+
+.icon_big {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  border: 2rpx solid black;
+  margin-top: 33rpx;
+}
+
+.border_box {
+  background: rgb(140, 228, 234);
+  border-radius: 20rpx;
+  padding: 20rpx;
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.submit {
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.submit image {
+  height: 88rpx;
+  width: 264rpx;
+}
+
+.submit text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  font-weight: bold;
+}
+
+.btn_layout {
+  display: flex;
+  margin-top: 52rpx;
+}
+
+.btn {
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-left: unset;
+  padding-right: unset;
+  border-radius: unset;
+  line-height: unset;
+  background-color: unset;
+  border: unset;
+}
+
+.btn::after {
+  border: unset;
+  background-color: unset;
+}
+
+.btn image {
+  height: 88rpx;
+  width: 274rpx;
+}
+
+.btn text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-55%);
+  font-weight: bold;
+  line-height: unset;
+}
+
+.back_home {
+  margin-bottom: 24rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.bottom {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  left: 0px;
+  height: 250rpx;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+}
+
+.item image {
+  left: 100rpx;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+}
+
+.age {
+  color: rgb(70, 187, 255);
+  right: 50rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.rank {
+  width: 52rpx;
+  height: 65rpx;
+  left: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.rank-title {
+  height: 67rpx;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #449a9e;
+}
+
+.rank-title text {
+  position: absolute;
+  top: 10rpx;
+}
+
+.rank_list {
+  background: rgb(140, 228, 234);
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin-bottom: 250rpx;
+  width: 80%;
+  margin-top: 20rpx;
+}

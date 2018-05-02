@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class='container' style='height:100%;'>
+
+  <form bindsubmit="onSubmit" report-submit>
+    <view class='home-item' wx:for="{{items}}" wx:key="*this" bindtap='onItemClicked' data-value='{{index}}'>
+      <button form-type="submit">
+        <image src='{{item.topicPicture}}' class='home-image'></image>
+        <text class='home-title'>{{item.topicTitle}}</text>
+        <text class='home-tips'>{{item.testerAmount+"人测过"}}</text>
+      </button>
+    </view>
+  </form>
+</view>

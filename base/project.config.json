@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxc1e6d573b7dee2b7",
+	"projectname": "base",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试带source",
+					"pathName": "pages/index/index",
+					"query": "source=11",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "加速器demo",
+					"pathName": "pages/demo/accelerometer/index",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "录音",
+					"pathName": "pages/demo/record/index",
+					"query": "source=11",
+					"scene": "1001"
+				}
+			]
+		}
+	}
+}

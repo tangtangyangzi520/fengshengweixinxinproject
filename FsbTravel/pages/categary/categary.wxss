@@ -1,0 +1,22 @@
+@import "../choice-categary-template/choice-categary-template.wxss";
+
+.container {
+    padding: 4rpx 20rpx 130rpx 20rpx;
+}
+
+.list-back {
+    border-radius: 10rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.travel-title {
+    text-align: center;
+    margin-top: 32rpx;
+    color: #333;
+    font-size: 36rpx;
+    line-height: 36rpx;
+    margin-bottom: 65rpx;
+}
+

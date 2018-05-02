@@ -1,0 +1,20 @@
+<view style='height:50rpx;'></view>
+<view class="item">
+  <view>性别</view>
+  <view class='picker' bindtap="bindSexChange" >
+    {{sex!=-1?(sex===0?'男':'女'):'请选择'}}<image src="../../assets/icon-down.png"></image>
+  </view>
+</view>
+<view class="item">
+  <view>出生年月</view>
+  <picker bindchange="bindDateChange" value="{{date}}" mode="date" start="1900-01-01" end="2017-10-01">
+    {{date!=''?date:'请选择'}}<image src="../../assets/icon-down.png"></image>
+  </picker>
+</view>
+<view class="item">
+  <view>身高</view>
+  <picker mode="selector" bindchange="bindHeightChange" value="{{height}}" range="{{hArr}}">
+    {{!hasSelectHeight?'请选择':hArr[height]}}<image src="../../assets/icon-down.png"></image>
+  </picker>
+</view>
+<view bindtap='goStart' class="btn-fix-bottom">准备好了，开始上秤</view>

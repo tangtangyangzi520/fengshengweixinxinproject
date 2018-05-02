@@ -1,0 +1,7 @@
+<!--pages/preTest/preTest2.wxml-->
+<view class='container'>
+  <image src='/images/topic2/bg_start@2x.png' class='bg' mode='widthFix'></image>
+  <view class="inner">
+    <image class='img' src='/images/topic2/bt_start_normal@2x.png' bindtap='onStartTest'></image>
+  </view>
+</view>

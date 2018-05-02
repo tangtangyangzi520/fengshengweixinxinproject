@@ -1,0 +1,15 @@
+<!--pages/preTest/preTest.wxml-->
+<view class='container'>
+  <image src='/images/topic1/bg_start@2x.png' class='bg' mode='aspectFill'></image>
+  <view class="inner">
+    <block wx:for="{{topicNote}}" wx:key="*this">
+      <view class='note'>{{item}}</view>
+    </block>
+    
+    <view class='btn' bindtap='onStartTest'>
+      <image src='/images/topic1/bt_start_normal@2x.png'></image>
+      <view>开始测试</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/result/result.wxml-->
+<view class='container'>
+  <canvas class='bg' canvas-id="cardCanvas" style='left:1000px;width:750px;height:1334px;'></canvas>
+  <image src='/images/topic1/bg_test@2x.png' class='bg'></image>
+  <view class='inner' style='margin-top:20rpx;'>
+    <image src='/images/topic1/bg_result_normal@2x.png' mode='aspectFit' class='result_border'></image>
+    <view class='btn_layout'>
+      <button class='btn' style='margin-right:30rpx' open-type="share">
+        <image src='/images/topic1/bt_submit_normal@2x.png'></image>
+        <view>看你排第几</view>
+        <view>转发至微信群</view>
+      </button>
+      <view class='btn' style='margin-left:30rpx' bindtap='onTestAgain'>
+        <image src='/images/topic1/bt_submit_normal@2x.png'></image>
+        <text>再测一次</text>
+      </view>
+    </view>
+    <text class='back_home' bindtap='onBackHome'>回到首页</text>
+  </view>
+
+  <view class="inner" style='width: 65%;'>
+    <text style='font-size:40rpx; color: rgb(110, 110, 110)' wx:if="{{result.differAge<=0}}">哇塞！你比实际年龄</text>
+    <text style='font-size:40rpx; color: rgb(110, 110, 110)' wx:else>哎呦~你比实际年龄</text>
+    <view>
+      <text style='font-size:100rpx;color: rgb(254, 110, 110)' wx:if="{{result.differAge<0}}">{{result.differAge}}</text>
+      <text style='font-size:100rpx;color: rgb(254, 110, 110)' wx:elif="{{result.differAge>0}}">{{"+"+result.differAge}}</text>
+      <text style='font-size:100rpx;color: rgb(254, 110, 110)' wx:else>{{result.differAge}}</text>
+      <text style='font-size:50rpx;color: rgb(254, 110, 110)'>{{result.answerSplit}}</text>
+    </view>
+
+    <view style='position:relative'>
+      <image class='result_img' src='{{result.answerPicture}}' bindtap='onImageClicked'></image>
+      <image class='mask' src='/images/topic1/ic_yinzhang@2x.png'></image>
+    </view>
+
+    <text class='borde_text'>{{result.answerDesc}}</text>
+  </view>
+
+  <!-- <view class='btn share_btn' bindtap='onCreateQR'>
+    <image src='/images/topic1/bt_share_normal@2x.png'></image>
+    <text>分享至朋友圈</text>
+  </view> -->
+</view>

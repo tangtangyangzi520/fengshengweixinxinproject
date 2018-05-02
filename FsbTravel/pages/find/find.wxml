@@ -1,0 +1,27 @@
+<view class='container'>
+      <form bindsubmit="submitFromId" report-submit>
+            <image class='find-header-img' src='/images/bg_240_travel_normal@3x.png' mode='aspectFill'></image>
+            <input class='find-header-input' placeholder="输入目的地，创建我的清单" placeholder-style="color:#FFF;font-size: 36rpx;text-align: center;" bindinput="inputValueChanged" bindfocus="inputFocus" maxlength='20'></input>
+            <view class='find-header-line'></view>
+            <view class='find-header-btn' bindtap="creatTravelList">
+                  <button plain='true' form-type="submit" class='find-header-btn-text'>创建我的打包清单</button>
+            </view>
+
+
+
+            <view class='template-container-back' wx:if="{{templateList.length > 0}}">
+                  <text class='template-title'>热门目的地</text>
+
+                  <view class='template-container'>
+                        <block wx:for="{{templateList}}" wx:key="unique" wx:for-item="item" wx:for-index="index">
+                              <view class="template-item {{index%2==1 ? 'template-item-doub' : ''}}" bindtap='templateClicked' data-template="{{item}}">
+                                    <button plain='true' form-type="submit">
+                                          <image class='template-img' src="{{item.img}}"></image>
+                                          <text class='template-name'>{{item.templateListArea}}</text>
+                                    </button>
+                              </view>
+                        </block>
+                  </view>
+            </view>
+      </form>
+</view>

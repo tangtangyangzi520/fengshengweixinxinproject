@@ -1,0 +1,16 @@
+.center {
+  text-align: center;
+}
+.round {
+  border-radius: 50%;
+}
+.fr {
+  float: right;
+}
+
+button[type="default"] {
+  background: #fff;
+  padding: 5rpx 40rpx;
+  color: #6a6a6a;
+  font-size: 26rpx;
+}
